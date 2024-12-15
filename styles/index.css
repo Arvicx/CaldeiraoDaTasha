@@ -1,0 +1,34 @@
+#abinha{
+    width: 100%;
+    height: 20px;
+    background-color: rgb(42, 22, 54);
+}
+
+.carrossel-conta{
+    width: 98%;
+    margin: 20px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+#carrossel{
+    width: 50%;
+    height: 90%;
+    background-color: brown;
+}
+
+#conta{
+    width: 50%;
+    height: 90%;
+    background-color: chartreuse;
+}
+
+.criacao{
+    width: 98%;
+    height: 300px;
+    background-color: crimson;
+}
