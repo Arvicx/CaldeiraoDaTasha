@@ -16,15 +16,16 @@
 }
 
 #carrossel{
-    width: 50%;
-    height: 90%;
+    width: 935px;
+    height: 368px;
     background-color: brown;
 }
 
 #conta{
-    width: 50%;
-    height: 90%;
+    width: 935px;
+    height: 368px;
     background-color: chartreuse;
+    background-image: url(../images/bannerCaldeirao.png);
 }
 
 .criacao{
