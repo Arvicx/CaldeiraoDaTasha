@@ -1,9 +1,3 @@
-#abinha{
-    width: 100%;
-    height: 20px;
-    background-color: rgb(42, 22, 54);
-}
-
 .carrossel-conta{
     width: 98%;
     margin: 20px;
@@ -24,12 +18,64 @@
 #conta{
     width: 935px;
     height: 368px;
+    padding: 50px 80px;
     background-color: chartreuse;
-    background-image: url(../images/bannerCaldeirao.png);
+    background-image: url(../images/bannerTasha.png);
+    display: flex;
+    justify-content: end;
 }
 
 .criacao{
     width: 98%;
     height: 300px;
-    background-color: crimson;
+    background-image: url(../images/fichaCaldeirao.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#texto-conta{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: black;
+}
+
+strong{
+    color: rgb(169, 88, 245);
+}
+
+nav{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(42, 22, 54);
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none!important;
+    color: rgb(169, 88, 245);
+}
+
+nav:hover{
+    background-color: rgb(169, 88, 245);
+    a{
+        color: rgb(42, 22, 54);
+    }
+}
+
+#criaFicha{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ficha{
+    width: 200px;
 }
