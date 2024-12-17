@@ -26,8 +26,9 @@
                   <ul>
                     <li><a href="index.html"><h4>Home</h4></a></li>
                     <li><a href="pages/ficha.html"><h4>Crie sua Ficha</h4></a></li>
-                    <li id="opcaoLink"><a href="pages/minhasFichas.html"><h3>Minhas Fichas</h3></a></li>
-                    <li><a href="pages/perfil.html"><h4 id="perfilNome">Perfil</h4></a></li>    
+                    <li class="opcaoLink"><a href="pages/minhasFichas.html"><h3>Minhas Fichas</h3></a></li>
+                    <li><a href="pages/perfil.html"><h4 id="perfilNome">Perfil</h4></a></li>
+                    <button class="opcaoLink" id="deslogar" onclick="deslogarUsuario()"><h4>Deslogar</h4></button>    
                   </ul>
                 </div>
             </div>
@@ -55,39 +56,41 @@
         <div id="abinha"></div>
 
         <div class="carrossel-conta">
-            <div id="carrossel">
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="images/apresentacao/apresentacao.png" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="images/apresentacao/apresentacao2.png" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="images/apresentacao/apresentacao3.png" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="images/apresentacao/apresentacao4.png" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-            </div>
-
+            
             <div id="conta">
               <div id="texto-conta">
                 <h1>Para começar é <strong>simples</strong>! Basta <strong>criar</strong> uma conta e <strong>aproveitar</strong>! </h1>
                 <nav><a href="pages/perfil.html"><h2>Crie sua Conta!</h2></a></nav>
               </div>
             </div>
+
+            <div id="carrossel">
+              <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="images/apresentacao/apresentacao.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/apresentacao/apresentacao2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/apresentacao/apresentacao3.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/apresentacao/apresentacao4.png" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+          </div>
+
         </div>
 
         <div class="criacao">
@@ -106,6 +109,7 @@
     <footer></footer>
 
     <script src="scripts/script.js"></script>
+    <script src="scripts/criaUsuario.js"></script>
     <script src="scripts/pesquisa.js"></script>
     <script src="scripts/abaLateral.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

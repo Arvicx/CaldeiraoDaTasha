@@ -1,3 +1,64 @@
 body{
     color: black;
+    background-image: url(/images/backgroundPerfil.png);
 }
+
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 29px;
+}
+
+form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#usuarioForm{
+    gap: 5px;
+}
+
+#usuarioForm button{
+    display: flex;
+    justify-content: center;
+    
+}
+
+input{
+    width: 300px;
+
+}
+
+.RegistroLogin{
+    width: 200px;
+}
+
+#registro{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-image: url(/images/backgroundRegistro.png);
+
+}
+
+#login{
+    width: 50%;
+    background-image: url(/images/backgroundLogin.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#loginForm{
+    gap: 5px;
+}
+

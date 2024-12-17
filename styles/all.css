@@ -4,15 +4,16 @@
 }
 
 *{
-    margin: 0%;
-    padding: 0%;
-    color: white;
-    font-family: 'Caldeirao','Times New Roman';
+  margin: 0%;
+  padding: 0%;
+  color: white;
+  font-family: 'Caldeirao','Times New Roman';
 }
 
 body{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+    
 }
 
 main{
@@ -23,159 +24,158 @@ main{
 }
 
 header{
-    width: 100%;
-    height: 100px;
-    background-color: rgb(50, 28, 63);
-    display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(50, 28, 63);
+  display: flex;
 }
 
 .headerEsquerda{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .headerDireita{
-    margin: 0px 10px;
-    width: 50%;
-    display: flex;
-    justify-content: end;
+  margin: 0px 10px;
+  width: 50%;
+  display: flex;
+  justify-content: end;
 }
 
 .pesquisa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
   }
   
-  #barra-pesquisa {
-    width: 300px;
-    padding: 10px;
-    border: 1px solid rgb(70, 36, 90);
-    border-radius: 4px;
-  }
+#barra-pesquisa {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid rgb(70, 36, 90);
+  border-radius: 4px;
+}
 
-  input{
-    background-color: rgb(42, 22, 54);
-  }
+input{
+  background-color: rgb(42, 22, 54);
+}
 
-  input:hover{
-    background-color: rgb(70, 36, 90);
+input:hover{
+  background-color: rgb(70, 36, 90);
     
-  }
+}
   
-  button {
-    padding: 10px 15px;
-    margin-left: 5px;
-    border: none;
-    background-color: rgb(42, 22, 54);
-    border: 1px solid rgb(70, 36, 90);
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+button {
+  padding: 10px 15px;
+  margin-left: 5px;
+  border: none;
+  background-color: rgb(42, 22, 54);
+  border: 1px solid rgb(70, 36, 90);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
   
-  button:hover {
-    background-color: rgb(70, 36, 90);
-  }
+button:hover {
+  background-color: rgb(70, 36, 90);
+}
   
-  #listaResultados {
-    list-style: none;
-    padding: 0;
-  }
+#listaResultados {
+  list-style: none;
+  padding: 0;
+}
   
-  #listaResultados li {
-    padding: 8px;
-    background: white;
-    margin: 5px 0;
-    border-radius: 4px;
-  }
+#listaResultados li {
+  padding: 8px;
+  background: white;
+  margin: 5px 0;
+  border-radius: 4px;
+}
   
-  .container {
-    padding: 20px;
-  }
+.container {
+  padding: 20px;
+}
   
-  .open-btn {
-    padding: 10px 15px;
-    font-size: 16px;
-    background-color: rgb(50, 28, 63);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+.open-btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: rgb(50, 28, 63);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
   
-  .open-btn:hover {
-    background-color: rgb(42, 22, 54);
-  }
+.open-btn:hover {
+  background-color: rgb(42, 22, 54);
+}
   
-  /* Estilo da aba lateral */
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: -250px; /* Começa fora da tela */
-    width: 250px;
-    height: 100%;
-    background-color: rgb(50, 28, 63);
-    color: white;
-    overflow: hidden;
-    transition: left 0.3s ease; /* Transição suave */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-  }
+/* Estilo da aba lateral */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Começa fora da tela */
+  width: 250px;
+  height: 100%;
+  background-color: rgb(50, 28, 63);
+  color: white;
+  overflow: hidden;
+  transition: left 0.3s ease; /* Transição suave */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
   
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-  }
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
   
-  .sidebar ul li {
-    padding: 15px 20px;
-    border-bottom: 1px solid rgb(42, 22, 54);
-  }
+.sidebar ul li {
+  padding: 15px 20px;
+  border-bottom: 1px solid rgb(42, 22, 54);
+}
   
-  .sidebar ul li a {
-    color: white;
-    text-decoration: none;
-  }
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
   
-  .sidebar ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-  }
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
 
-  .close-btn:hover {
-    background-color: rgb(42, 22, 54);
-  }
+.close-btn:hover {
+  background-color: rgb(42, 22, 54);
+}
   
-  /* Classe para abrir a aba */
-  .sidebar.open {
-    left: 0; /* Aba aparece na tela */
-  }
+/* Classe para abrir a aba */
+.sidebar.open {
+  left: 0; /* Aba aparece na tela */
+}
 
-  #abinha{
-    width: 100%;
-    height: 20px;
-    background-color: rgb(42, 22, 54);
+#abinha{
+  width: 100%;
+  height: 20px;
+  background-color: rgb(42, 22, 54);
 }
 
 input{
   font-family: 'Times New Roman', Times, serif;
 }
 
-#opcaoLink {
+.opcaoLink {
   display: none;
 }
 
@@ -184,5 +184,15 @@ input{
 }
 
 #opcaoLink:hover{
+  text-decoration: underline;
+}
+
+#deslogar{
+  text-align: start;
+  background-color: rgb(50, 28, 63);
+  border: 0px;
+}
+
+#deslogar:hover{
   text-decoration: underline;
 }

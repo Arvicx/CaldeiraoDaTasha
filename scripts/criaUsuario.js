@@ -2,7 +2,11 @@
 window.addEventListener('load', () => {
     const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
     if (usuarioLogado) {
-        document.getElementById('opcaoLink').style.display = 'block';
+        var opcoes = document.querySelectorAll('.opcaoLink');
+
+        opcoes.forEach(element => {
+            element.style.display = 'block'
+        });
     }
 });
 
@@ -68,7 +72,13 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     if (usuarioCadastrado && loginEmail === usuarioCadastrado.email && loginSenha === usuarioCadastrado.senha) {
         alert(`Bem-vindo, ${usuarioCadastrado.nome}! Login realizado com sucesso.`);
         localStorage.setItem('usuarioLogado', JSON.stringify(usuarioCadastrado));
-        document.getElementById('opcaoLink').style.display = 'block';
+
+        var opcoes = document.querySelectorAll('.opcaoLink');
+
+        opcoes.forEach(element => {
+            element.style.display = 'none'
+        });
+
         location.reload()
     } else {
         alert("Email ou senha incorretos. Tente novamente.");
