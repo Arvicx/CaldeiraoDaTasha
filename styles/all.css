@@ -182,3 +182,7 @@ input{
 #opcaoLink a {
   text-decoration: none;
 }
+
+#opcaoLink:hover{
+  text-decoration: underline;
+}

@@ -69,6 +69,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         alert(`Bem-vindo, ${usuarioCadastrado.nome}! Login realizado com sucesso.`);
         localStorage.setItem('usuarioLogado', JSON.stringify(usuarioCadastrado));
         document.getElementById('opcaoLink').style.display = 'block';
+        location.reload()
     } else {
         alert("Email ou senha incorretos. Tente novamente.");
     }
