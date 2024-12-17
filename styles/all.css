@@ -170,3 +170,15 @@ header{
     height: 20px;
     background-color: rgb(42, 22, 54);
 }
+
+input{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#opcaoLink {
+  display: none;
+}
+
+#opcaoLink a {
+  text-decoration: none;
+}
