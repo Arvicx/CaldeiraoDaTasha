@@ -77,3 +77,9 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     // Resetar o formulário de login
     document.getElementById('loginForm').reset();
 });
+
+function deslogarUsuario() {
+    localStorage.removeItem('usuarioLogado'); // Remove os dados do usuário logado
+    alert('Você foi deslogado com sucesso!');
+    location.reload()
+}
