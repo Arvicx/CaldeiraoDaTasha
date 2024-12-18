@@ -1,12 +1,16 @@
 body{
     background-color: black;
     background-image: url(/images/background.png);
+    color: black;
+}
+
+option{
+    color: black;
 }
 
 .criacaoFicha{
     width: 90%;
     height: 800px;
-    background-color: aqua;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +19,40 @@ body{
 #criaFicha{
     width: 95%;
     height: 700px;
-    background-color: blue;
     display: flex;
     flex-wrap: wrap;
+}
+
+#info2{
+    width: 50%;
+    height: 100%;
+}
+
+select{
+    color: black;
+}
+
+.info1{
+    width: 50%;
+    height: 100%;
+}
+
+form, option{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.oculto {
+    display: none;
+}
+
+.teste{
+    width: 50%;
+    height: 100px;
+    background-color: deeppink;
+}
+
+.teste2{
+    width: 50%;
+    height: 100px;
+    background-color: rgb(88, 0, 47);
 }
