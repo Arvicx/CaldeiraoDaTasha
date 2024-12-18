@@ -106,7 +106,7 @@ function exibirResultados() {
 
     // Exibe os resultados
     resultados.forEach((roll, index) => {
-        resultadosDiv.innerHTML += `<p>Rolagem ${index + 1}: [${roll.rolagem.join(', ')}] -> Soma: ${roll.resultado}</p>`;
+        resultadosDiv.innerHTML += `<h4>Rolagem ${index + 1}: [${roll.rolagem.join(', ')}] -> Soma: ${roll.resultado}</h4>`;
     });
 }
 

@@ -4,10 +4,6 @@ body{
     color: black;
 }
 
-option{
-    color: black;
-}
-
 .criacaoFicha{
     width: 90%;
     height: 800px;
@@ -28,13 +24,35 @@ option{
     height: 100%;
 }
 
-select{
-    color: black;
-}
-
 .info1{
     width: 50%;
     height: 100%;
+    background-image: url(/images/backgroundInfo1.png);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#info2{
+    width: 50%;
+    height: 100%;
+    background-image: url(/images/backgroundInfo2.png);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+}
+
+#pontosXP, #nivel{
+    width: 50px;
+}
+
+.info1 input{
+    width: 300px;
+    height: 30px;
 }
 
 form, option{

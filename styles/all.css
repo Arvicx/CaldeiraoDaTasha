@@ -66,6 +66,24 @@ input:hover{
   background-color: rgb(70, 36, 90);
     
 }
+
+select, option{
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  background-color: rgb(42, 22, 54);
+}
+
+select:hover{
+  background-color: rgb(70, 36, 90);
+}
+
+option:hover{
+  background-color: rgb(70, 36, 90);
+}
+
+textarea{
+  background-color: rgb(70, 36, 90);
+}
   
 button {
   padding: 10px 15px;

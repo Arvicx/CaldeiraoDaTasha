@@ -24,6 +24,7 @@
                     <li class="opcaoLink"><a href="minhasFichas.html"><h3>Minhas Fichas</h3></a></li>
                     <li><a href="perfil.html"><h4 id="perfilNome">Perfil</h4></a></li>
                     <button class="opcaoLink" id="deslogar" onclick="deslogarUsuario()"><h4>Deslogar</h4></button>
+                    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
                   </ul>
                 </div>
             </div>
@@ -60,74 +61,80 @@
                     <label for="nomePersonagem"><h3>Nome do Personagem:</h3></label>
                     <input type="text" id="nomePersonagem" name="nomePersonagem" required><br><br>
             
-                    <label for="nivel"><h3>Nível:</h3></label>
-                    <input type="number" id="nivel" name="nivel" min="1" required><br><br>
+                    <div>
+                        <label for="nivel"><h3>Nível:</h3></label>
+                        <input type="number" id="nivel" name="nivel" min="1" required>
+                
+                        <label for="pontosXP"><h3>&nbsp;&nbsp;Pontos de XP:</h3></label>
+                        <input type="number" id="pontosXP" name="pontosXP" min="0" required><br><br>
+                    </div>
+                    
+                    <div>
+                        <label for="raca"><h3>Raça:</h3></label>
+                        <select id="raca" name="raca" required>
+                            <option value="">Selecione...</option>
+                            <option value="anao">Anão</option>
+                            <option value="elfo">Elfo</option>
+                            <option value="halfling">Halfling</option>
+                            <option value="humano">Humano</option>
+                            <option value="draconato">Draconato</option>
+                            <option value="gnomo">Gnomo</option>
+                            <option value="meio-elfo">Meio-Elfo</option>
+                            <option value="meio-orc">Meio-Orc</option>
+                            <option value="tiefling">Tiefling</option>
+                        </select>
+                
+                        <label for="classe"><h3>&nbsp;&nbsp;Classe:</h3></label>
+                        <select id="classe" name="classe" required>
+                            <option value="">Selecione...</option>
+                            <option value="barbaro">Bárbaro</option>
+                            <option value="bardo">Bardo</option>
+                            <option value="bruxo">Bruxo</option>
+                            <option value="clerigo">Clérigo</option>
+                            <option value="druida">Druida</option>
+                            <option value="feiticeiro">Feiticeiro</option>
+                            <option value="guerreiro">Guerreiro</option>
+                            <option value="ladino">Ladino</option>
+                            <option value="mago">Mago</option>
+                            <option value="monge">Monge</option>
+                            <option value="paladino">Paladino</option>
+                            <option value="patrulheiro">Patrulheiro</option>
+                        </select><br><br>
+                    </div>
             
-                    <label for="pontosXP"><h3>Pontos de XP:</h3></label>
-                    <input type="number" id="pontosXP" name="pontosXP" min="0" required><br><br>
-            
-                    <label for="raca"><h3>Raça:</h3></label>
-                    <select id="raca" name="raca" required>
-                        <option value="">Selecione...</option>
-                        <option value="anao">Anão</option>
-                        <option value="elfo">Elfo</option>
-                        <option value="halfling">Halfling</option>
-                        <option value="humano">Humano</option>
-                        <option value="draconato">Draconato</option>
-                        <option value="gnomo">Gnomo</option>
-                        <option value="meio-elfo">Meio-Elfo</option>
-                        <option value="meio-orc">Meio-Orc</option>
-                        <option value="tiefling">Tiefling</option>
-                    </select><br><br>
-            
-                    <label for="classe"><h3>Classe:</h3></label>
-                    <select id="classe" name="classe" required>
-                        <option value="">Selecione...</option>
-                        <option value="barbaro">Bárbaro</option>
-                        <option value="bardo">Bardo</option>
-                        <option value="bruxo">Bruxo</option>
-                        <option value="clerigo">Clérigo</option>
-                        <option value="druida">Druida</option>
-                        <option value="feiticeiro">Feiticeiro</option>
-                        <option value="guerreiro">Guerreiro</option>
-                        <option value="ladino">Ladino</option>
-                        <option value="mago">Mago</option>
-                        <option value="monge">Monge</option>
-                        <option value="paladino">Paladino</option>
-                        <option value="patrulheiro">Patrulheiro</option>
-                    </select><br><br>
-            
-                    <label for="antecedente"><h3>Antecedente:</h3></label>
-                    <select id="antecedente" name="antecedente" required>
-                        <option value="">Selecione...</option>
-                        <option value="acolito">Acólito</option>
-                        <option value="artesão">Artesão de Guilda</option>
-                        <option value="artista">Artista</option>
-                        <option value="charlatao">Charlatão</option>
-                        <option value="criminoso">Criminoso</option>
-                        <option value="eremita">Eremita</option>
-                        <option value="forasteiro">Forasteiro</option>
-                        <option value="heroi">Herói do Povo</option>
-                        <option value="marinheiro">Marinheiro</option>
-                        <option value="nobre">Nobre</option>
-                        <option value="orfao">Órfão</option>
-                        <option value="sabio">Sábio</option>
-                        <option value="soldado">Soldado</option>
-                    </select><br><br>
-            
-                    <label for="tendencia"><h3>Tendência:</h3></label>
-                    <select id="tendencia" name="tendencia" required>
-                        <option value="">Selecione...</option>
-                        <option value="leal_bom">Leal e Bom</option>
-                        <option value="leal_neutro">Leal e Neutro</option>
-                        <option value="leal_mal">Leal e Mal</option>
-                        <option value="neutro_bom">Neutro e Bom</option>
-                        <option value="neutro">Neutro</option>
-                        <option value="neutro_mal">Neutro e Mal</option>
-                        <option value="Caótico_Bom">Caótico e Bom</option>
-                        <option value="Caótico Neutro">Caótico Neutro</option>
-                        <option value="Caótico Mal">Caótico Mal</option>
-                    </select><br><br>
+                    <div>
+                        <label for="antecedente"><h3>Antecedente:</h3></label>
+                        <select id="antecedente" name="antecedente" required>
+                            <option value="">Selecione...</option>
+                            <option value="acolito">Acólito</option>
+                            <option value="artesão">Artesão de Guilda</option>
+                            <option value="artista">Artista</option>
+                            <option value="charlatao">Charlatão</option>
+                            <option value="criminoso">Criminoso</option>
+                            <option value="eremita">Eremita</option>
+                            <option value="forasteiro">Forasteiro</option>
+                            <option value="heroi">Herói do Povo</option>
+                            <option value="marinheiro">Marinheiro</option>
+                            <option value="nobre">Nobre</option>
+                            <option value="orfao">Órfão</option>
+                            <option value="sabio">Sábio</option>
+                            <option value="soldado">Soldado</option>
+                        </select>
+                
+                        <label for="tendencia"><h3>&nbsp;&nbsp;Tendência:</h3></label>
+                        <select id="tendencia" name="tendencia" required>
+                            <option value="">Selecione...</option>
+                            <option value="leal_bom">Leal e Bom</option>
+                            <option value="leal_neutro">Leal e Neutro</option>
+                            <option value="leal_mal">Leal e Mal</option>
+                            <option value="neutro_bom">Neutro e Bom</option>
+                            <option value="neutro">Neutro</option>
+                            <option value="neutro_mal">Neutro e Mal</option>
+                            <option value="Caótico_Bom">Caótico e Bom</option>
+                            <option value="Caótico Neutro">Caótico Neutro</option>
+                            <option value="Caótico Mal">Caótico Mal</option>
+                        </select><br><br>
+                    </div>
 
                     <label for="descricao"><h3>Descrição:</h3></label>
                     <textarea id="descricao" name="descricao" rows="4" cols="50" required></textarea><br><br>
@@ -136,15 +143,13 @@
                 </form>
 
                 <div class="" id="info2">
-                    <h2>gire seus atributos!</h2>
-                    <h3>Escolha entre Atributos ou Dados de Vida</h3> 
+                    <h2>Agora gire seus atributos!</h2>
 
-
-                    <label for="Atributos">Atributos</label>
-                    <button id="rolar">Gire</button>
+                    <label for="Atributos"><h3>Atributos</h3></label>
+                    <button id="rolar"><h4>Girar</h4></button>
                     <div id="resultados"></div>
                     <!-- Tipo de dado -->
-                    <label for="tipoDado">Tipo de Dado:</label>
+                    <label for="tipoDado"><h3>Tipo de Dado:</h3></label>
                     <select id="tipoDado">
                         <option value="4">D4</option>
                         <option value="6">D6</option>
@@ -156,22 +161,22 @@
                     </select>
 
                     <!-- Contador para quantidade -->
-                    <label for="quantidade">Quantidade de Dados:</label>
+                    <label for="quantidade"><h3>Quantidade de Dados:</h3></label>
                     <input type="number" id="quantidade" min="1" value="1" style="width: 60px;">
 
                     <!-- Botão para rolar -->
-                    <button id="rolarDado">Rolar</button>
+                    <button id="rolarDado"><h4>Rolar</h4></button>
 
                     <!-- Resultado -->
-                    <div id="resultado">Clique para rolar os dados!</div>
+                    <div id="resultado"><h3>Clique para rolar os dados!</h3></div>
 
                     <!-- Botão para rolar -->
-                    <button id="rolarDado">Rolar</button>
+                    <button id="rolarDado"><h4>Rolar</h4></button>
 
                     <!-- Resultado -->
-                    <div id="resultado">Clique para rolar um dado!</div>
+                    <div id="resultado"><h3>Clique para rolar um dado!</h3></div>
 
-                    <button id="alternar">Alternar Conteúdo</button>
+                    <button id="alternar"><h4>Alternar Conteúdo</h4></button>
                 </div>
 
                 <div class="teste oculto"></div>
