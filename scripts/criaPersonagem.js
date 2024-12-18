@@ -1,5 +1,19 @@
+var personagem = {}
+
+// Verificar o Local Storage ao carregar a página
+window.addEventListener('load', () => {
+    const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
+    if (usuarioLogado) {
+        var opcoes = document.querySelectorAll('.opcaoLink');
+
+        opcoes.forEach(element => {
+            element.style.display = 'block'
+        });
+    }
+});
+
 class Personagem {
-    constructor(nomePessoa, nomePersonagem, nivel, pontosXP, raca, classe, antecedente, tendencia,descricao) {
+    constructor(nomePessoa, nomePersonagem, nivel, pontosXP, raca, classe, antecedente, tendencia,descricao,forca,destreza,constituicao,inteligencia,sabedoria,carisma,modForca,modDestreza,modConstituicao,modInteligencia,modSabedoria,modCarisma) {
         this.nomePessoa = nomePessoa;
         this.nomePersonagem = nomePersonagem;
         this.nivel = nivel;
@@ -9,6 +23,21 @@ class Personagem {
         this.antecedente = antecedente;
         this.tendencia = tendencia;
         this.descricao = descricao;
+
+        this.forca = forca;
+        this.modForca = modForca;
+        this.destreza = destreza;
+        this.modDestreza = modDestreza;
+        this.constituicao = constituicao;
+        this.modConstituicao = modConstituicao;
+        this.inteligencia = inteligencia;
+        this.modInteligencia = modInteligencia;
+        this.sabedoria = sabedoria;
+        this.modSabedoria = modSabedoria;
+        this.carisma = carisma;
+        this.modCarisma = modCarisma;
+
+        
     }
 }
 
@@ -31,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const personagem = new Personagem(nomePessoa, nomePersonagem, nivel, pontosXP, raca, classe, antecedente, tendencia, descricao);
+        personagem = new Personagem(nomePessoa, nomePersonagem, nivel, pontosXP, raca, classe, antecedente, tendencia, descricao);
         console.log(personagem);
 
         alert("Personagem cadastrado com sucesso!");
@@ -115,24 +144,29 @@ document.getElementById('rolar').addEventListener('click', exibirResultados);
 
 // Função para alternar entre o conteúdo exibido
 function alternarConteudo() {
-    const info1 = document.getElementById('info1');
+    const info1 = document.getElementById('personagemForm');
     const info2 = document.getElementById('info2');
     const teste = document.getElementById('teste');
     const teste2 = document.getElementById('teste2');
     
+    console.log(info1)
+    console.log(info2)
+    console.log(teste)
+    console.log(teste2)
+
     // Verifica qual conteúdo está visível e alterna
-    if (info1.classList.contains('oculto')&&info2.classList.contains('oculto')) {
+    if (info1.classList.contains('oculto') && info2.classList.contains('oculto')) {
         info1.classList.remove('oculto');  // Torna visível o conteúdo 1
         info2.classList.remove('oculto');
-        teste1.classList.add('oculto');     // Esconde o conteúdo 2
+        teste.classList.add('oculto');     // Esconde o conteúdo 2
         teste2.classList.add('oculto');
     } else {
         info1.classList.add('oculto');     // Esconde o conteúdo 1
         info2.classList.add('oculto');
         teste.classList.remove('oculto');  // Torna visível o conteúdo 2
-        teste.classList.remove('oculto');
+        teste2.classList.remove('oculto');
     }
 }
 
 // Adiciona evento de clique ao botão
-document.getElementById('alternar').addEventListener('click', alternarConteudo());
+document.getElementById('alternar').addEventListener('click', alternarConteudo);

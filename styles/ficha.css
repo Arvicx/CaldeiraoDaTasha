@@ -63,14 +63,18 @@ form, option{
     display: none;
 }
 
-.teste{
+.visivel{
+    display: flex;
+}
+
+#teste{
     width: 50%;
-    height: 100px;
+    height: 500px;
     background-color: deeppink;
 }
 
-.teste2{
+#teste2{
     width: 50%;
-    height: 100px;
+    height: 500px;
     background-color: rgb(88, 0, 47);
 }
