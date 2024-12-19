@@ -144,37 +144,32 @@
                 </form>
 
                 <div class="info2" id="info2">
-                    <h2>Agora gire seus atributos!</h2>
+                    <h2>Atributos</h2>
+                    <div>
+                        <label for="forca"><h3>Força:</h3></label>
+                        <input type="text" id="forca" name="forca" required><br><br>
 
+                        <label for="destreza"><h3>Destreza:</h3></label>
+                        <input type="text" id="destreza" name="destreza" required><br><br>
+
+                        <label for="constituicao"><h3>Constituição:</h3></label>
+                        <input type="text" id="constituicao" name="constituicao" required><br><br>
+                        
+                        <label for="inteligencia"><h3>Inteligência:</h3></label>
+                        <input type="text" id="inteligencia" name="inteligencia" required><br><br>
+
+                        <label for="sabedoria"><h3>Sabedoria:</h3></label>
+                        <input type="text" id="sabedoria" name="sabedoria" required><br><br>
+
+                        <label for="carisma"><h3>Carisma:</h3></label>
+                        <input type="text" id="carisma" name="carisma" required><br><br>
+                    </div>
+                    <h2>Agora gire seus atributos!</h2>
                     <label for="Atributos"><h3>Atributos</h3></label>
                     <button id="rolar"><h4>Girar</h4></button>
-                    <div id="resultados"></div>
-                    <!-- Tipo de dado -->
-                    <label for="tipoDado"><h3>Tipo de Dado:</h3></label>
-                    <select id="tipoDado">
-                        <option value="4">D4</option>
-                        <option value="6">D6</option>
-                        <option value="8">D8</option>
-                        <option value="10">D10</option>
-                        <option value="12">D12</option>
-                        <option value="20" selected>D20</option>
-                        <option value="100">D100</option>
-                    </select>
-
-                    <!-- Contador para quantidade -->
-                    <label for="quantidade"><h3>Quantidade de Dados:</h3></label>
-                    <input type="number" id="quantidade" min="1" value="1" style="width: 60px;">
-
-                    <!-- Botão para rolar -->
-                    <button id="rolarDado"><h4>Rolar</h4></button>
-
-                    <!-- Resultado -->
-                    <div id="resultado"><h3>Clique para rolar os dados!</h3></div>
-
-
-                    
+                    <button id="limpar"><h4>Limpar Resultados</h4></button>
+                    <div id="resultados"></div>                            
                 </div>
-                
 
             </div>
     </main>

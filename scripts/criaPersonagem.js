@@ -9,6 +9,8 @@ window.addEventListener('load', () => {
         opcoes.forEach(element => {
             element.style.display = 'block'
         });
+    }else{
+        alert("Você precisa estar logado para criar fichas!")
     }
 });
 
@@ -68,41 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Função para rolar um dado
-function rolarDado(lados) {
-    return Math.floor(Math.random() * lados) + 1;
-}
-
-// Função para rolar múltiplos dados
-function rolarMultiplosDados(lados, quantidade) {
-    const resultados = [];
-    for (let i = 0; i < quantidade; i++) {
-        resultados.push(rolarDado(lados));
-    }
-    return resultados;
-}
-
-// Evento de clique no botão
-document.getElementById('rolarDado').addEventListener('click', () => {
-    // Obtém o tipo de dado e a quantidade
-    const tipoDado = parseInt(document.getElementById('tipoDado').value);
-    const quantidade = parseInt(document.getElementById('quantidade').value);
-
-    // Valida a quantidade de dados
-    if (quantidade < 1) {
-        document.getElementById('resultado').textContent = 'Por favor, escolha ao menos 1 dado.';
-        return;
-    }
-
-    // Rola os dados
-    const resultados = rolarMultiplosDados(tipoDado, quantidade);
-
-    // Calcula a soma e exibe os resultados
-    const soma = resultados.reduce((total, num) => total + num, 0);
-    document.getElementById('resultado').textContent = 
-        `Resultados: [${resultados.join(', ')}] | Soma: ${soma}`;
-});
-
 function rolarDados6x() {
     const resultadosFinais = [];
 
@@ -141,3 +108,12 @@ function exibirResultados() {
 
 // Adiciona evento ao botão
 document.getElementById('rolar').addEventListener('click', exibirResultados);
+
+// Função para limpar os resultados
+function limparResultados() {
+    const resultadosDiv = document.getElementById('resultados');
+    resultadosDiv.innerHTML = ''; // Remove todo o conteúdo da div
+}
+
+// Adiciona evento ao botão "Limpar"
+document.getElementById('limpar').addEventListener('click', limparResultados);
