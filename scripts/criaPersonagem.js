@@ -117,3 +117,30 @@ function limparResultados() {
 
 // Adiciona evento ao botão "Limpar"
 document.getElementById('limpar').addEventListener('click', limparResultados);
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('personagemForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const nomePessoa = document.getElementById('nomePessoa').value.trim();
+        const nomePersonagem = document.getElementById('nomePersonagem').value.trim();
+        const nivel = parseInt(document.getElementById('nivel').value) || 0;
+        const pontosXP = parseInt(document.getElementById('pontosXP').value) || 0;
+        const raca = document.getElementById('raca').value;
+        const classe = document.getElementById('classe').value;
+        const antecedente = document.getElementById('antecedente').value;
+        const tendencia = document.getElementById('tendencia').value;
+        const descricao = document.getElementById('descricao').value.trim();
+
+        if (!nomePessoa || !nomePersonagem || !raca || !classe || !antecedente || !tendencia || !descricao) {
+            alert("Preencha todos os campos corretamente!");
+            return;
+        }
+
+        personagem = new Personagem(nomePessoa, nomePersonagem, nivel, pontosXP, raca, classe, antecedente, tendencia, descricao);
+        console.log(personagem);
+
+        alert("Personagem cadastrado com sucesso!");
+        event.target.reset();
+    });
+});

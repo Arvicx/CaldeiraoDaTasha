@@ -146,26 +146,59 @@
                 <div class="info2" id="info2">
                     <h2>Atributos</h2>
                     <div>
-                        <label for="forca"><h3>Força:</h3></label>
-                        <input type="text" id="forca" name="forca" required><br><br>
+                        <form class="atributos" id="atributos">
+                            <label for="forca"><h3>Força:</h3></label>
+                            <input type="number" id="forca" name="forca" max="30" min="1" required><br><br>
 
-                        <label for="destreza"><h3>Destreza:</h3></label>
-                        <input type="text" id="destreza" name="destreza" required><br><br>
+                            <label for="destreza"><h3>Destreza:</h3></label>
+                            <input type="number" id="destreza" name="destreza" max="30" min="1" required><br><br>
 
-                        <label for="constituicao"><h3>Constituição:</h3></label>
-                        <input type="text" id="constituicao" name="constituicao" required><br><br>
+                            <label for="constituicao"><h3>Constituição:</h3></label>
+                            <input type="number" id="constituicao" name="constituicao" max="30" min="1" required><br><br>
+                       
+                            <label for="inteligencia"><h3>Inteligência:</h3></label>
+                            <input type="number" id="inteligencia" name="inteligencia" max="30" min="1" required><br><br>
+
+                            <label for="sabedoria"><h3>Sabedoria:</h3></label>
+                            <input type="number" id="sabedoria" name="sabedoria" max="30" min="1" required><br><br>
+
+                            <label for="carisma"><h3>Carisma:</h3></label>
+                            <input type="number" id="carisma" name="carisma" max="30" min="1" required><br><br>
+
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">
+                                ?
+                            </button>
+        
+                            <div id="modal" class="modal fade">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title">O que são os atributos e para que servem?</h3>
+                                            <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Muito do que o personagem faz no jogo depende de suas seis habilidades: Força, Destreza, Constituição, Inteligência, Sabedoria e Carisma. Cada habilidadepossui um valor que deve ser anotado na sua ficha de personagem.</p><p>Você gera os seis valores de habilidade do personagem aleatoriamente girando no botão abaixo.</p><p>Agora, você deve atribuir cada um dos seis números jogados para cada uma das seis habilidades de seupersonagem: Força, Destreza, Constituição, Inteligência,Sabedoria e Carisma. Depois, você deve fazer asalterações de seus valores de habilidade a partir da sua escolha de raça (raça e sub-raça, quando houver).</p>
+
+                                            <h4>Atributos</h4>
+                                            <p><strong>Força:</strong>A força mede a potência física, treinamento atlético, e a extensão da força bruta que você pode exercer.</p>
+                                            <p><strong>Destreza:</strong>A destreza mede a agilidade, os reflexos e o equilíbrio.</p>
+                                            <p><strong>Constituição:</strong>A constituição mede a saúde, resistência e a força vital.</p>
+                                            <p><strong>Inteligência:</strong>A inteligência mede a acuidade mental, precisão da memória e a habilidade de raciocinar.</p>
+                                            <p><strong>Sabedoria:</strong>A sabedoria reflete como você está em sintonia com o mundo ao seu redor e representa percepção e intuição.</p>
+                                            <p><strong>Carisma:</strong>O carisma mede a capacidade de interagir com eficazmente com os outros. Ele inclui fatores como confiança e eloquência, e pode representar uma personalidade encantadora ou dominadora.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit"><h3>Cadastrar Atributos</h3></button>
+                        </form>
                         
-                        <label for="inteligencia"><h3>Inteligência:</h3></label>
-                        <input type="text" id="inteligencia" name="inteligencia" required><br><br>
-
-                        <label for="sabedoria"><h3>Sabedoria:</h3></label>
-                        <input type="text" id="sabedoria" name="sabedoria" required><br><br>
-
-                        <label for="carisma"><h3>Carisma:</h3></label>
-                        <input type="text" id="carisma" name="carisma" required><br><br>
                     </div>
                     <h2>Agora gire seus atributos!</h2>
-                    <label for="Atributos"><h3>Atributos</h3></label>
                     <button id="rolar"><h4>Girar</h4></button>
                     <button id="limpar"><h4>Limpar Resultados</h4></button>
                     <div id="resultados"></div>                            
