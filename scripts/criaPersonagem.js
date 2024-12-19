@@ -141,32 +141,3 @@ function exibirResultados() {
 
 // Adiciona evento ao botão
 document.getElementById('rolar').addEventListener('click', exibirResultados);
-
-// Função para alternar entre o conteúdo exibido
-function alternarConteudo() {
-    const info1 = document.getElementById('personagemForm');
-    const info2 = document.getElementById('info2');
-    const teste = document.getElementById('teste');
-    const teste2 = document.getElementById('teste2');
-    
-    console.log(info1)
-    console.log(info2)
-    console.log(teste)
-    console.log(teste2)
-
-    // Verifica qual conteúdo está visível e alterna
-    if (info1.classList.contains('oculto') && info2.classList.contains('oculto')) {
-        info1.classList.remove('oculto');  // Torna visível o conteúdo 1
-        info2.classList.remove('oculto');
-        teste.classList.add('oculto');     // Esconde o conteúdo 2
-        teste2.classList.add('oculto');
-    } else {
-        info1.classList.add('oculto');     // Esconde o conteúdo 1
-        info2.classList.add('oculto');
-        teste.classList.remove('oculto');  // Torna visível o conteúdo 2
-        teste2.classList.remove('oculto');
-    }
-}
-
-// Adiciona evento de clique ao botão
-document.getElementById('alternar').addEventListener('click', alternarConteudo);
