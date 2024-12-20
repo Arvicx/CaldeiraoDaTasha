@@ -14,12 +14,12 @@ body{
 }
 
 .ficha{
-    width: auto;
-    height: auto;
+    width: 800px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: brown;
+    background-image: url(/images/backgroundMinhasFichas.png);
     gap: 20px;
 }
 
