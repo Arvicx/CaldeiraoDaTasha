@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+    background-image: url(/images/background.png);
+    color: black;
+}
+
+.fichas{
+    width: 95%;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ficha{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: brown;
+    gap: 20px;
+}
+
+#cabecaFicha{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+#cabecaFicha2{
+    display: flex;
+    justify-content: space-between;
+}

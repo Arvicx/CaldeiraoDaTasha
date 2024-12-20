@@ -68,7 +68,7 @@ form, option,strong,h4{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 35px;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .atributos input{
@@ -102,4 +102,8 @@ form, option,strong,h4{
 
 .modal-content{
     background-color: rgb(70, 36, 90);
+}
+
+.roll{
+    font-family: 'Caldeirao';
 }
